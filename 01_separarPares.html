@@ -7,10 +7,20 @@
 
     //ENTRADA
 
+    let listaDeNumeros = [1, 4, 6, 8, 898, 7, 43, 2980, 3500, 10];
     
     //PROCESSAMENTO
 
+let par = [];
 
-    //SAÍDA
+for (let item of listaDeNumeros){
+    if(item % 2 === 0){
+        par.push(item)
+    }
+}
+
+ //SAIDA
+
+ alert(par.join(`, `))
 
 </script>
