@@ -7,10 +7,25 @@
 
     //ENTRADA
 
+    let listaDeNumeros = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10];
 
     //PROCESSAMENTO
 
+    let p = [];
+    let i = [];
+
+    for (let item of listaDeNumeros) {
+        if (item % 2 == 0) {
+            p.push(item);
+        }
+        else {
+            i.push(item);
+        }
+    }
 
     //SAÍDA
+
+    alert(`A lista de números pares em forma crescente ${p.join(`, `)} \n\n A lista de números pares em forma descrescente ${p.reverse().join(`, `)} `)
+    alert(`A lista de números ímpares em forma crescente ${i.join(`, `)} \n\n A lista de números pares em forma descrescente ${i.reverse().join(`, `)} `)
 
 </script>
