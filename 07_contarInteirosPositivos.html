@@ -11,7 +11,16 @@
 
     //PROCESSAMENTO
 
+let par =[];
+
+    for(let item of listaDeNumeros){
+        if (item % 1 === 0 && item > 0){
+par.push(item)
+        }
+    }
 
     //SAÍDA
+
+    alert(`Os números positivos são: ${par.join(`, `)}`)
 
 </script>

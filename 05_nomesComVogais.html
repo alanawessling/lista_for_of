@@ -9,8 +9,27 @@
 
     let listaDeNomes = ["Amanda", "Eduardo", "Fábio", "Evelin", "César", "José", "Ivo", "Eva", "Otávio", "Inez", "Osmar", "Ulisses"];
 
+    let l = [];
+    let vogal;
+
     //PROCESSAMENTO
 
+    for (let item of listaDeNomes) {
+        vogal = item.charAt().toLocaleUpperCase();
+        switch (vogal) {
+            case "A":
+            case "E":
+            case "I":
+            case "O":
+            case "U":
+                l.push(item)
+                break
+        }
+        l.sort()
+    }
+
     //SAÍDA
+
+    alert(`Os nomes em ordem alfabética é: ${l.join(`, `)} `)
 
 </script>
